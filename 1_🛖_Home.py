@@ -12,10 +12,8 @@ st.set_page_config(
 )
 
 # Criando o titulo
-st.markdown('# Data Analitics of FIFA', text_alignment="center")
+st.markdown('# Data Analitics of FIFA')
 st.sidebar.markdown("#### Developement by *Luiz Domingo*")
 
 # Criando o botal para navegar até o perfil
-btn = st.sidebar.button('Perfil')
-if btn:
-  wb.open_new_tab("https://www.linkedin.com/in/luiz-domingo-silva-dev-dev/")
+btn = st.sidebar.link_button('Perfil',"https://www.linkedin.com/in/luiz-domingo-silva-dev-dev/")
